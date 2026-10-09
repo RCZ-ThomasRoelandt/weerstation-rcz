@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over ons · Weerstation Richtpunt</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#D6AD00">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <a href="https://richtpunt.be/ninovezottegem/" target="_blank" rel="noopener">Schoolwebsite</a>
+      <span>Eigen weerstation · Richtpunt campus Zottegem</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="Richtpunt campus Ninove-Zottegem"><span>Weerstation</span></a>
+      <button class="burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="over-ons.html">Over ons</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="band page-band">
+    <div class="wrap">
+      <div class="eyebrow">Over ons</div>
+      <h1>Het team achter het weerstation</h1>
+      <p>Een project van Richtpunt campus Zottegem.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="wrap">
+
+      <!-- 👉 Pas hier gerust de tekst onder jullie naam aan -->
+      <div class="team">
+        <div class="card member">
+          <div class="avatar">XB</div>
+          <div>
+            <h3>Xeno Becaus</h3>
+            <p>Projectlid · weerstation &amp; website</p>
+          </div>
+        </div>
+        <div class="card member">
+          <div class="avatar">TR</div>
+          <div>
+            <h3>Thomas Roelandt</h3>
+            <p>Projectlid · weerstation &amp; website</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card prose" style="margin-bottom:24px">
+        <div class="section-title"><span data-icon="compass"></span>Het project</div>
+        <p>Voor dit project bouwden we een eigen weerstation, opgesteld op <b>campus Zottegem</b> van
+           Richtpunt (Richtpunt campus Ninove-Zottegem). Een Raspberry Pi Pico W leest verschillende
+           sensoren uit en stuurt de metingen via wifi naar onze online meetdatabase. Deze website haalt
+           die gegevens op en toont ze live op het dashboard en als trends op de homepagina — het zijn
+           dus steeds de eigen, actuele metingen van <b>campus Zottegem</b>, niet van elders.</p>
+        <p>Een belangrijk onderdeel is de vergelijking tussen een <b>groen dak</b> en een <b>gewoon dak</b>.
+           Met een temperatuursensor onder elk dak onderzoeken we of beplanting een dak koeler houdt.</p>
+      </div>
+
+      <div class="card">
+        <div class="section-title"><span data-icon="cpu"></span>Wat we gebruiken</div>
+        <ul class="parts">
+          <li><b>Raspberry Pi Pico W</b><span>Het brein, stuurt alles via wifi door</span></li>
+          <li><b>BME688</b><span>Luchtvochtigheid, luchtdruk, gasweerstand, temperatuur</span></li>
+          <li><b>Temperatuursensoren</b><span>Groen dak, gewoon dak en grijs dak</span></li>
+          <li><b>Windmeter &amp; windvaan</b><span>Windsnelheid en windrichting</span></li>
+          <li><b>Regenmeter</b><span>Neerslag in mm</span></li>
+          <li><b>Online meetdatabase</b><span>Bewaart de metingen zodat de website ze live kan tonen</span></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© Richtpunt campus Zottegem · Weerstation-project</span>
+      <span>Xeno Becaus &amp; Thomas Roelandt</span>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/common.js"></script>
+  <script>document.querySelectorAll("[data-icon]").forEach(el => el.innerHTML = icon(el.dataset.icon));</script>
+</body>
+</html>
